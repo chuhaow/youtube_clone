@@ -17,3 +17,23 @@ code {
   outline: none;
   width: 350px;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+
+.category-btn{
+  justify-content: start;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 7px 14px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}

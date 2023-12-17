@@ -5,7 +5,7 @@ import { CheckCircle, WrapText } from "@mui/icons-material"
 import TimeSincePost from "./TimeSincePost"
 
 const VideoCard = ({video})  => {
-    console.log(video);
+
   return (
     <Card sx={{width:{md: '320px', xs: '356px'}}}>
         <Link to={`video/${video.id.videoId}`} >

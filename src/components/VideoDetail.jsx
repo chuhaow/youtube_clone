@@ -25,9 +25,9 @@ const VideoDetail = () => {
   if(videoDetail === null) return 'Loading...'
   return (
     <Box minHeight={"95vh"}>
-      <Stack direction={{xs: 'column', md: 'row'}}>
+      <Stack direction={{xs: 'column', md: 'row'}} spacing={10}>
         <Box flex={1}>
-          <Box sx={{width: '100%', position: 'sticky', top: '100px'}} height={'360px'}> {/*Video */}
+          <Box sx={{width: '100%', position: 'sticky', top: '100px', paddingLeft: '10px'}} height={'400px'}> {/*Video */}
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id.id}`} className="react-player" controls  width={'100%'} height={'100%'} />
             <Typography color={'#fff'} variant='h5' fontWeight={'bold'} p={2}>
               {videoDetail.snippet.title}
@@ -51,7 +51,7 @@ const VideoDetail = () => {
           </Box>
         </Box>
         <Box px={2} py={{md: 1, xs: 5}} justifyContent={"center"} alignItems="center">
-          <Videos videos={videos} direction="column"/> {/*Fix linking issue on suggested videos*/}
+          <Videos videos={videos} direction="column"/> 
         </Box>
       </Stack>
 

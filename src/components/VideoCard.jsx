@@ -7,11 +7,13 @@ import TimeSincePost from "./TimeSincePost"
 const VideoCard = ({video})  => {
 
   return (
-    <Card sx={{width:{md: '320px', xs: '356px'}}}>
+    <Card sx={{width:{md: '320px', sm: '358px', xs: '100%'}}}>
         <Link to={`/video/${video.id.videoId}`} >
             <CardMedia
              image={video.snippet?.thumbnails?.high?.url} 
-             sx={{width: 360, height: 180}}
+             sx={{width: {
+                xs: '100%', sm:'358px', md:'320px'
+             }, height: 180}}
              />
         </Link>
         <CardContent sx={{backgroundColor: '#1e1e1e', height: '106px'}}>

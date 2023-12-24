@@ -25,7 +25,7 @@ const Feed = () => {
           ></Sidebar>
 
           <Typography className='TypographyTest'variant='body2' sx={{mt:1.5, color: '#fff'}}>
-            Test Text
+            Youtube React Clone
           </Typography>
 
       </Box>
